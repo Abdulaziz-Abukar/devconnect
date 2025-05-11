@@ -1,0 +1,60 @@
+.headerWrapper {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  box-shadow: 0 0 8px black;
+}
+
+.headerWrapper img {
+  width: 90px;
+  height: auto;
+  position: relative;
+  left: 2rem;
+  display: block;
+  padding: 0.5rem;
+  margin-left: 2rem;
+}
+
+.navBar {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.listContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.listItem {
+  height: 100%;
+}
+
+.listItem a {
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 1rem 1.25rem;
+  border-radius: 1.5rem;
+  background-color: transparent;
+  transition: background-color 50ms ease-in-out, color 200ms ease-in-out,
+    transform 50ms ease-in-out, box-shadow 50ms ease-in-out;
+}
+
+.listItem a:hover {
+  background-color: rgb(22, 22, 22);
+  color: white;
+  border-left: 1px solid black;
+  box-shadow: -5px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.listItem a:active {
+  transform: translate(-5px, 2px);
+  box-shadow: none;
+}
